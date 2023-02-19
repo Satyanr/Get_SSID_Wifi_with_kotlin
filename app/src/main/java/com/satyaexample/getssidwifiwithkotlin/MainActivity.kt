@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         if (checkLocationPermission(applicationContext)) {
             val ssid = getWifiSSID(applicationContext)
             // Do something with the SSID
-            textView.text = "Your Device IP Address: $ssid"
+            textView.text = "Wifi SSID: $ssid"
         } else {
             requestLocationPermission(this)
         }
